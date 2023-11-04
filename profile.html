@@ -107,6 +107,39 @@
     <script>
       // JavaScript code to handle form submission and validate inputs
       // Add your JavaScript code here
+      const form = document.getElementById('registrationForm');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // prevent form submission
+
+        // Retrieve user data
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const age = document.getElementById('age').value;
+        const profilePicture = document.getElementById('profilePicture').files[0];
+        const selectedOptions = document.getElementById('interests').selectedOptions;
+        const interests = Array.from(selectedOptions).map(option => option.value);
+
+        // Create a FormData object to send the data
+        const formData = new FormData();
+        formData.append('name', name);
+        formData.append('phone', phone);
+        formData.append('age', age);
+        formData.append('profilePicture', profilePicture);
+        formData.append('interests', JSON.stringify(interests));
+
+        // Send the data to the server
+        fetch('http://localhost:3000/saveProfile', {
+          method: 'POST',
+          body: formData
+        })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Profile saved:', data);
+            // Handle the response from the server
+          })
+          .catch(error => console.error('Error saving profile:', error));
+      });
     </script>
   </body>
 </html>
