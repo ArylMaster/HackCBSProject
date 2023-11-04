@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tell Me About Your Interests - VideoConnect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tell Me About Your Interests</h1>
+    </header>
+
+    <section class="interests-section">
+      <div class="interests-list">
+        <label for="interest">Add Interests:</label>
+        <input
+          type="text"
+          id="interest"
+          placeholder="e.g. Cooking, Travel, Coding"
+        />
+        <button onclick="addInterest()">Add</button>
+      </div>
+      <div id="interests-container"></div>
+    </section>
+
+    <button onclick="saveInterests()">Save Interests</button>
+
+    <script src="interests.js"></script>
+  </body>
+</html>

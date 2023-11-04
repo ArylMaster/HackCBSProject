@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Registration</title>
+    <style>
+      /* CSS styles for the page */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1b1b1b;
+        color: #ffffff;
+      }
+
+      h1 {
+        text-align: center;
+        color: #00ff00;
+        font-size: 3rem;
+        margin-top: 50px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #00ff00;
+        font-size: 1.5rem;
+        margin-top: 20px;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 50px;
+        background-color: #2b2b2b;
+        border-radius: 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: #00ff00;
+      }
+
+      input[type="text"],
+      input[type="tel"],
+      input[type="number"],
+      input[type="file"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #3b3b3b;
+        color: #ffffff;
+      }
+
+      select {
+        height: 40px;
+      }
+
+      button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #00ff00;
+        color: #2b2b2b;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #3b3b3b;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>NicheNet</h1>
+    <h2>Connecting Interests, Discovering Connections</h2>
+
+    <form id="registrationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required />
+
+      <label for="profilePicture">Profile Picture:</label>
+      <input type="file" id="profilePicture" name="profilePicture" />
+
+      <label for="interests">Interests:</label>
+      <select id="interests" name="interests" multiple>
+        <option value="sports">Sports</option>
+        <option value="funny">Funny</option>
+        <option value="finance">Finance</option>
+        <option value="tech">Tech</option>
+        <option value="science">Science</option>
+        <option value="education">Education</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <script>
+      // JavaScript code to handle form submission and validate inputs
+      // Add your JavaScript code here
+    </script>
+  </body>
+</html>
