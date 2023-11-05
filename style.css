@@ -66,3 +66,113 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #3b3b3b;
 }
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #45a049;
+}
+
+.buttons button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
+.buttons button:active {
+  background-color: #3e8e41;
+}
+
+.motto {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label[for="profilePicture"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+label[for="profilePicture"]:hover {
+  background-color: #45a049;
+}
+
+label[for="profilePicture"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
+label[for="profilePicture"]:active {
+  background-color: #3e8e41;
+}
+
+
+.interests-list button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.interests-list button:hover {
+  background-color: #45a049;
+}
+
+.interests-list button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
+.interests-list button:active {
+  background-color: #3e8e41;
+}
+
+.interests-list button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.interests-list button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.interests-list button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
+.interests-list button[type="submit"]:active {
+  background-color: #3e8e41;
+}
